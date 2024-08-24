@@ -39,7 +39,7 @@ section {
 
 .logo {
     cursor: pointer;
-    width: 30px;
+    width: 25px; /*taille du logo*/
     height: auto;
     box-shadow: rgba(127, 134, 165, 0.3) 1px 1px 10px;
     border-radius: 50%;
@@ -299,6 +299,7 @@ footer {
         height: 100%;
         gap: 1rem;
         grid-template-columns: 1fr;
+       
     }
 
     .icons {
@@ -342,12 +343,18 @@ footer {
 
 @media (max-width: 630px) {
     .hero-image img {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
     .hero-text {
         display: block;
         align-items: center;
+        padding-top: 80px;
+    }
+
+    .logo {
+        padding-top: 10px;
+        box-shadow: none;
     }
 }
