@@ -246,6 +246,9 @@ footer {
     font-weight: 200;
 }
 
+
+/* _________________RESPONSIVE___________________ */
+
 @media (max-width: 1257px) {
     header {
         padding: 10px 2%;
@@ -279,6 +282,11 @@ footer {
     section {
         padding: 0px 2%;
         transition: 0.2s;
+    }
+
+    .logo {
+        padding-top: 4px;
+        box-shadow: none;
     }
 
     .hero-text {
@@ -353,8 +361,5 @@ footer {
         padding-top: 80px;
     }
 
-    .logo {
-        padding-top: 10px;
-        box-shadow: none;
-    }
+    
 }
