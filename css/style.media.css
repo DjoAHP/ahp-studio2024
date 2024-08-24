@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"); @font-face {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@font-face {
     font-family: Blacksword;
     src: url("/font/blacksword.otf") format("opentype");
 }
@@ -20,6 +23,71 @@ a {
     cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), auto;
 }
 
+/* _________________SECTION 1___________________ */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.tilted-section {
+    padding: 180px 24px 40px;
+    height: 100vh;
+    perspective: 2000px;
+}
+
+.tilted-section__card {
+    max-width: 1000px;
+    aspect-ratio: 1 / 0.40;
+    margin: 0 auto;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    pointer-events: none;
+    background-color: #f1f1f1;
+    position: relative;
+    transition: transform 0.2s ease-out;
+}
+
+.tilted-section__bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.tilted-section__card-button {
+    pointer-events: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 175px;
+    padding: 12px;
+    font-size: 20px;
+    font-family: Oswald;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition:
+        background-color 0.4s ease-out,
+        color 0.4s ease-out;
+}
+
+.tilted-section__card-button:hover {
+    background-color: #111;
+    color: #f1f1f1;
+}
+
+/* _________________SECTION 1___________________ */
+
+
 header {
     position: fixed;
     right: 0px;
@@ -39,9 +107,10 @@ section {
 
 .logo {
     cursor: pointer;
-    width: 25px; /*taille du logo*/
+    width: 25px;
+    /*taille du logo*/
     height: auto;
-    box-shadow: rgba(127, 134, 165, 0.3) 1px 1px 10px;
+    box-shadow: rgba(127, 134, 165, 0.5) 1px 1px 10px;
     border-radius: 50%;
     transition: 0.4s;
 }
@@ -81,85 +150,14 @@ section {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(245.59deg, rgb(24, 20, 20) 0%, rgb(28, 20, 20) 28.53%, rgb(33, 47, 54) 75.52%);
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-}
-
-
-
-.icons {
     position: absolute;
-    top: 53%;
-    padding: 0px 5%;
-    transform: translateY(-50%);
-}
-
-.icons i {
-    display: block;
-    margin: 26px 0px;
-    font-size: 27px;
-    color: rgb(166, 157, 134);
-    transition: 0.5s;
-}
-
-.icons i:hover {
-    color: rgb(74, 98, 110);
-    transform: translateY(-5px);
-}
-
-
-
-
-
-.socials {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 1rem 0px 3rem;
+
 }
 
-.socials li {
-    margin: 0px 10px;
-}
 
-.socials a {
-    text-decoration: none;
-    color: rgb(166, 157, 134);
-}
 
-.socials a i {
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
 
-.socials a:hover {
-    color: rgb(253, 236, 193);
-}
-
-.footer-bottom {
-    color: rgb(166, 157, 134);
-    background: rgb(24, 32, 36);
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-bottom p {
-    font-size: 12px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-    font-weight: 400;
-}
-
-.footer-bottom span {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 200;
-}
 
 
 /* _________________RESPONSIVE___________________ */
@@ -187,7 +185,7 @@ section {
         transition: 0.2s;
     }
 
-    
+
 }
 
 @media (max-width: 1070px) {
@@ -201,7 +199,7 @@ section {
         box-shadow: none;
     }
 
-    
+
 
 
 
@@ -209,7 +207,7 @@ section {
         height: 100%;
         gap: 1rem;
         grid-template-columns: 1fr;
-       
+
     }
 
     .icons {
@@ -251,10 +249,4 @@ section {
     }
 }
 
-@media (max-width: 630px) {
-
-
-    
-
-    
-}
+@media (max-width: 630px) {}
