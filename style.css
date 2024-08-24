@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"); @font-face {
+    font-family: Blacksword;
+    src: url("/font/blacksword.otf") format("opentype");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    cursor: url("cursors/FormaShadowlessNormalSelect.cur"), auto;
+}
+
+a {
+    cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), auto;
+}
+
+header {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 52px;
+    background: transparent;
+}
+
+section {
+    padding: 0px 19%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+    box-shadow: rgba(127, 134, 165, 0.3) 1px 1px 10px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navlist {
+    display: flex;
+    border-radius: 20px;
+}
+
+.navlist a {
+    color: rgba(166, 157, 134, 0.682);
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    transition: 0.55s;
+}
+
+.navlist a:hover {
+    color: rgb(228, 215, 183);
+}
+
+#menu-icon {
+    color: rgb(166, 157, 134);
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, rgb(24, 20, 20) 0%, rgb(28, 20, 20) 28.53%, rgb(33, 47, 54) 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-text h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 90px;
+    line-height: 1;
+    color: rgb(166, 157, 134);
+    margin: 0px 0px 45px;
+}
+
+.hero-text p {
+    color: rgb(166, 157, 134);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-image img {
+    width: 550px;
+    height: auto;
+    opacity: 0.7;
+}
+
+.hero-text a {
+    display: inline-block;
+    color: rgb(24, 20, 20);
+    background: rgb(166, 157, 134);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: 0.55s;
+}
+
+.hero-text a:hover {
+    background-color: transparent;
+    color: rgb(166, 157, 134);
+    border: 1px solid rgb(166, 157, 134);
+    transform: translateX(8px);
+}
+
+.hero-text a.ctaa {
+    color: rgb(166, 157, 134);
+    background: transparent;
+    border: 1px solid rgb(166, 157, 134);
+    margin-left: 15px;
+}
+
+.hero-text a.ctaa i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons {
+    position: absolute;
+    top: 53%;
+    padding: 0px 5%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0px;
+    font-size: 27px;
+    color: rgb(166, 157, 134);
+    transition: 0.5s;
+}
+
+.icons i:hover {
+    color: rgb(74, 98, 110);
+    transform: translateY(-5px);
+}
+
+footer {
+    position: absolute;
+    inset: 309vh 0px 0px;
+    background: rgb(24, 20, 20);
+    height: auto;
+    width: 100%;
+    font-family: Poppins, sans-serif;
+    padding-top: 0px;
+    color: rgb(166, 157, 134);
+}
+
+.footer-content {
+    background: linear-gradient(245.59deg, rgb(11, 20, 18) 0%, rgb(28, 20, 20) 28.53%, rgb(10, 15, 18) 75.52%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: rgb(166, 157, 134);
+    font-size: 2rem;
+    font-family: Blacksword;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    color: rgb(166, 157, 134);
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 5px;
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0px 3rem;
+}
+
+.socials li {
+    margin: 0px 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: rgb(166, 157, 134);
+}
+
+.socials a i {
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: rgb(253, 236, 193);
+}
+
+.footer-bottom {
+    color: rgb(166, 157, 134);
+    background: rgb(24, 32, 36);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.footer-bottom span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+@media (max-width: 1257px) {
+    header {
+        padding: 10px 2%;
+        transition: 0.2s;
+    }
+
+    header {
+        padding: 0px 3%;
+        transition: 0.2s;
+    }
+
+    .scroll-down {
+        right: 3%;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        padding: 0px 12%;
+        transition: 0.2s;
+    }
+
+    .hero-text h1 {
+        font-size: 70px;
+        margin: 0px 0px 30px;
+    }
+}
+
+@media (max-width: 1070px) {
+    section {
+        padding: 0px 2%;
+        transition: 0.2s;
+    }
+
+    .hero-text {
+        padding-top: 115px;
+        text-align: center;
+    }
+
+    .hero-image {
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 600px;
+        height: auto;
+    }
+
+    .hero {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background-color: rgba(37, 57, 71, 0.5);
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: 0.55s;
+    }
+
+    .navlist a {
+        display: block;
+        margin: 6px 0px;
+    }
+
+    .navlist.open {
+        right: 0px;
+    }
+}
+
+@media (max-width: 630px) {
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text {
+        display: block;
+        align-items: center;
+    }
+}
