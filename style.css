@@ -465,6 +465,11 @@ input:checked+label .description {
     .navlist.open {
         right: 0px;
     }
+
+    .container {
+        width: 90%; /* Réduire la largeur du conteneur à 90% de la largeur de l'écran */
+        padding: 10px; /* Ajouter un peu de padding pour l'aération */
+    }
 }
 
 @media (max-width: 630px) {
@@ -481,3 +486,4 @@ input:checked+label .description {
 
     
 }
+
