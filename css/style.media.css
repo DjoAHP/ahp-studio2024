@@ -30,14 +30,14 @@ a {
 
 
 header {
-    position:fixed;
+    position:fixed; 
     right: 0px;
     top: 0px;
     z-index: 1000;
     width: 100%;
-    display: flex;
+    display: flex; /*aligne vertical*/
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /*espace homogene sur toute la ligne*/
     padding: 17px 52px;
     background: transparent;
 }
