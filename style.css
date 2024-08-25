@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"); @font-face {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@font-face {
     font-family: Blacksword;
     src: url("/font/blacksword.otf") format("opentype");
 }
@@ -15,7 +18,17 @@
 body {
     cursor: url("cursors/FormaShadowlessNormalSelect.cur"), auto;
     background: linear-gradient(245.59deg, rgb(24, 20, 20) 0%, rgb(28, 20, 20) 28.53%, rgb(33, 47, 54) 75.52%);
+    
 }
+
+/* Background COUTEAU  */
+
+    
+
+
+    
+
+
 
 a {
     cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), auto;
@@ -40,7 +53,8 @@ section {
 
 .logo {
     cursor: pointer;
-    width: 25px; /*taille du logo*/
+    width: 25px;
+    /*taille du logo*/
     height: auto;
     box-shadow: rgba(127, 134, 165, 0.3) 1px 1px 10px;
     border-radius: 50%;
@@ -348,19 +362,19 @@ input:checked+label .description {
 
 .card[for="c1"] {
     background-image: url('/image/photos/kiritsuke-face.jpg');
-} 
+}
 
 .card[for="c2"] {
     background-image: url('/image/photos/utilitaire-face.png');
-} 
+}
 
 .card[for="c3"] {
     background-image: url('/image/photos/viking-face.png');
-} 
+}
 
 .card[for="c4"] {
     background-image: url('/image/photos/brut1-face.JPG');
-} 
+}
 
 /* PORTFOLIO SECTION 2 */
 
@@ -425,7 +439,7 @@ input:checked+label .description {
         height: 100%;
         gap: 1rem;
         grid-template-columns: 1fr;
-       
+
     }
 
     .icons {
@@ -467,8 +481,10 @@ input:checked+label .description {
     }
 
     .container {
-        width: 90%; /* Réduire la largeur du conteneur à 90% de la largeur de l'écran */
-        padding: 10px; /* Ajouter un peu de padding pour l'aération */
+        width: 90%;
+        /* Réduire la largeur du conteneur à 90% de la largeur de l'écran */
+        padding: 10px;
+        /* Ajouter un peu de padding pour l'aération */
     }
 }
 
@@ -484,6 +500,5 @@ input:checked+label .description {
         padding-top: 80px;
     }
 
-    
-}
 
+}
