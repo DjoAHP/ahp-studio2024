@@ -323,11 +323,12 @@ footer {
 .description p {
     /* description */
     color: #181414;
-    padding-top: 5px;
+    margin: 0;
 }
 
 .description h4 {
     text-transform: uppercase;
+    margin: 0;
 }
 
 input {
