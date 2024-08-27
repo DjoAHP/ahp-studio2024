@@ -12,7 +12,7 @@ body {
     display: block;
     padding: 13px;
     font-size: 30px;
-    color: rgb(166, 157, 134);
+    color: var(--text-color-prim);
     border-radius: 30px;
     transition: 0.5s;
 }
