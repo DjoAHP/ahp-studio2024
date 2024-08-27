@@ -23,7 +23,7 @@ body {
 
 /* DARK MODE  */
 
-:root {
+/* :root {
     --color-logo-hg: invert(5%) sepia(11%) saturate(987%) hue-rotate(314deg) brightness(90%) contrast(91%);
     --text-color-btn-prim: #d6cfbb;
     --text-color-prim: #181414;
@@ -37,6 +37,23 @@ body {
     --text-color-btn-prim: #181414;
     --text-color-prim: #a69d86;
     --background-color-prim: linear-gradient(245.59deg, #181414 0%, #1c1414 28.53%, #212f36 75.52%);
+
+} */
+
+:root {
+    --color-logo-hg: invert(62%) sepia(19%) saturate(313%) hue-rotate(5deg) brightness(97%) contrast(90%);
+    --text-color-btn-prim: #181414;
+    --text-color-prim: #a69d86;
+    --background-color-prim: linear-gradient(245.59deg, #181414 0%, #1c1414 28.53%, #212f36 75.52%);
+
+    
+}
+
+.dark-theme {
+    --color-logo-hg: invert(5%) sepia(11%) saturate(987%) hue-rotate(314deg) brightness(90%) contrast(91%);
+    --text-color-btn-prim: #d6cfbb;
+    --text-color-prim: #181414;
+    --background-color-prim: linear-gradient(245.59deg, #8e846a 0%, #c4bca7 28.53%, #dcd8cd 75.52%);
 
 }
 
