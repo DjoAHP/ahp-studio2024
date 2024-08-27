@@ -1,5 +1,5 @@
 
-// SECTION MENU
+// SECTION 1
 
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
@@ -16,12 +16,10 @@ const sr = ScrollReveal ({
     reset: true
 });
 
+sr.reveal('.hero-text',{delay:200, origin: 'top'});
+sr.reveal('.hero-image',{delay:450, origin: 'bottom'});
+sr.reveal('.icons',{delay:500, origin: 'left'});
 sr.reveal('.scroll-down',{delay:500, origin: 'top'});
-
-// SECTION 1 
-
-// SECTION 1 
-
 
 
 

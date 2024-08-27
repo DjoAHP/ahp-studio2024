@@ -17,27 +17,52 @@
 
 body {
     cursor: url("cursors/FormaShadowlessNormalSelect.cur"), auto;
+    /* background: linear-gradient(245.59deg, rgb(24, 20, 20) 0%, rgb(28, 20, 20) 28.53%, rgb(33, 47, 54) 75.52%); */
+    background: var(--background-color-prim);
 }
+
+/* DARK MODE  */
+
+:root {
+    --color-logo-hg: invert(62%) sepia(19%) saturate(313%) hue-rotate(5deg) brightness(97%) contrast(90%);
+    --text-color-btn-prim: #181414;
+    --text-color-prim: #a69d86;
+    --background-color-prim: linear-gradient(245.59deg, #181414 0%, #1c1414 28.53%, #212f36 75.52%);
+
+    
+}
+
+.dark-theme {
+    --color-logo-hg: invert(5%) sepia(11%) saturate(987%) hue-rotate(314deg) brightness(90%) contrast(91%);
+    --text-color-btn-prim: #d6cfbb;
+    --text-color-prim: #181414;
+    --background-color-prim: linear-gradient(245.59deg, #8e846a 0%, #c4bca7 28.53%, #dcd8cd 75.52%);
+
+}
+
+/* ICONES DARK MODE  */
+
+#icondm {
+    width: 30px;
+    cursor: pointer;
+
+}
+
+/* ICONES DARK MODE  */
 
 a {
     cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), auto;
 }
 
-/* _________________SECTION 1___________________ */
-
-
-/* _________________SECTION 1___________________ */
-
-
 header {
-    position:fixed; 
+    position: fixed;
     right: 0px;
     top: 0px;
     z-index: 1000;
     width: 100%;
-    display: flex; /*aligne vertical*/
+    display: flex;
     align-items: center;
-    justify-content: space-between; /*espace homogene sur toute la ligne*/
+    justify-content: space-between;
     padding: 17px 52px;
     background: transparent;
 }
@@ -47,11 +72,13 @@ section {
 }
 
 .logo {
+    /* couleur logo HG  */
+    filter: var(--color-logo-hg);
     cursor: pointer;
     width: 25px;
     /*taille du logo*/
     height: auto;
-    box-shadow: rgba(127, 134, 165, 0.5) 1px 1px 10px;
+    box-shadow: #7f86a54d 1px 1px 10px;
     border-radius: 50%;
     transition: 0.4s;
 }
@@ -66,7 +93,8 @@ section {
 }
 
 .navlist a {
-    color: rgba(166, 157, 134, 0.682);
+    /* color: #a69d86ae; couleur navlist*/
+    color: var(--text-color-prim);
     margin-left: 60px;
     font-size: 15px;
     font-weight: 400;
@@ -75,11 +103,13 @@ section {
 }
 
 .navlist a:hover {
-    color: rgb(228, 215, 183);
+    /* color: #e4d7b7; */
+    color: var(--text-color-prim);
 }
 
 #menu-icon {
-    color: rgb(166, 157, 134);
+    /* color: #a69d86; couleur menu icone */
+    color: var(--text-color-prim);
     font-size: 30px;
     z-index: 10001;
     cursor: pointer;
@@ -90,11 +120,38 @@ section {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, rgb(24, 20, 20) 0%, rgb(28, 20, 20) 28.53%, rgb(33, 47, 54) 75.52%);
-    position: absolute;
+    /* background: linear-gradient(245.59deg, rgb(24, 20, 20) 0%, rgb(28, 20, 20) 28.53%, rgb(33, 47, 54) 75.52%); */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-
+    gap: 2rem;
 }
+
+
+.icons {
+    position: absolute;
+    top: 53%;
+    padding: 0px 5%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0px;
+    font-size: 27px;
+    /* color: #a69d86; icone reseaux */
+    color: var(--text-color-prim);
+    transition: 0.5s;
+}
+
+.icons i:hover {
+    color: #4a626e;
+    transform: translateY(-5px);
+}
+
+
+
 
 
 
@@ -126,7 +183,10 @@ section {
         transition: 0.2s;
     }
 
-
+    .hero-text h1 {
+        font-size: 70px;
+        margin: 0px 0px 30px;
+    }
 }
 
 @media (max-width: 1070px) {
@@ -140,9 +200,19 @@ section {
         box-shadow: none;
     }
 
+    .hero-text {
+        padding-top: 115px;
+        text-align: center;
+    }
 
+    .hero-image {
+        text-align: center;
+    }
 
-
+    .hero-image img {
+        width: 600px;
+        height: auto;
+    }
 
     .hero {
         height: 100%;
@@ -188,6 +258,26 @@ section {
     .navlist.open {
         right: 0px;
     }
+
+    .container {
+        width: 90%;
+        /* Réduire la largeur du conteneur à 90% de la largeur de l'écran */
+        padding: 10px;
+        /* Ajouter un peu de padding pour l'aération */
+    }
 }
 
-@media (max-width: 630px) {}
+@media (max-width: 630px) {
+    .hero-image img {
+        width: 90%;
+        height: auto;
+    }
+
+    .hero-text {
+        display: block;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+
+}
