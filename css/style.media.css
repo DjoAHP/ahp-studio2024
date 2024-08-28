@@ -17,16 +17,17 @@
 
 body {
     cursor: url("cursors/FormaShadowlessNormalSelect.cur"), auto;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    /* background: linear-gradient(245.59deg, rgb(24, 20, 20) 0%, rgb(28, 20, 20) 28.53%, rgb(33, 47, 54) 75.52%); */
+    background: var(--background-color-prim);
 }
 
-/*___________ DARK MODE __________ */
+/* DARK MODE  */
+
+
 
 :root {
     --color-logo-hg: invert(62%) sepia(19%) saturate(313%) hue-rotate(5deg) brightness(97%) contrast(90%);
@@ -54,16 +55,10 @@ body {
 }
 
 /* ICONES DARK MODE  */
-/*___________ DARK MODE __________ */
-
-
-
 
 a {
     cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), auto;
 }
-
-
 
 header {
     position: fixed;
@@ -78,9 +73,10 @@ header {
     background: transparent;
 }
 
+section {
+    padding: 0px 19%;
+}
 
-
-/*__________ LOGO HAUT GAUCHE __________*/
 .logo {
     /* couleur logo HG  */
     filter: var(--color-logo-hg);
@@ -96,12 +92,7 @@ header {
 .logo:hover {
     transform: scale(1.1);
 }
-/*__________ LOGO HAUT GAUCHE __________*/
 
-
-
-
-/*__________ MENU __________*/
 .navlist {
     display: flex;
     border-radius: 20px;
@@ -121,12 +112,6 @@ header {
     /* color: #e4d7b7; */
     color: var(--text-color-prim);
 }
-/*__________ MENU __________*/
-
-
-
-
-/*__________ ICONE HAMBURGER __________*/
 
 #menu-icon {
     /* color: #a69d86; couleur menu icone */
@@ -136,9 +121,6 @@ header {
     cursor: pointer;
     display: none;
 }
-/*__________ ICONE HAMBURGER __________*/
-
-
 
 
 
@@ -171,16 +153,27 @@ header {
     }
 }
 
+@media (max-width: 1200px) {
+    section {
+        padding: 0px 12%;
+        transition: 0.2s;
+    }
 
+
+}
 
 @media (max-width: 1070px) {
-
+    section {
+        padding: 0px 2%;
+        transition: 0.2s;
+    }
 
     .logo {
         padding-top: 4px;
         box-shadow: none;
     }
 
+    
 
     .scroll-down {
         display: none;
@@ -223,4 +216,3 @@ header {
         /* Ajouter un peu de padding pour l'aération */
     }
 }
-
