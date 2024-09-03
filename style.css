@@ -67,6 +67,11 @@ body {
 
 /* ICONES DARK MODE  */
 
+
+
+
+
+
 a {
     cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), auto;
 }
@@ -227,6 +232,21 @@ section {
     color: #4a626e;
     transform: translateY(-5px);
 }
+
+/* SCROLL BARRE PERSO  */
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background:var(--text-color-btn-prim);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--text-color-prim);
+    border-radius: 1px;
+}
+
+/* SCROLL BARRE PERSO  */
 
 
 
