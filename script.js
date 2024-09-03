@@ -6,7 +6,7 @@ gsap.fromTo(
       opacity: 0,
       display: "none",
       duration: 0.7,
-      delay: 2,
+      delay: 1,
     }
   );
   
