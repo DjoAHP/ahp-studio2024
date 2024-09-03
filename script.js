@@ -1,3 +1,31 @@
+// LOADER 
+// gsap.fromTo(
+//     ".loader-page",
+//     { opacity: 1 },
+//     {
+//       opacity: 0,
+//       display: "none",
+//       duration: 1.5,
+//       delay: 3.5,
+//     }
+//   );
+  
+//   gsap.fromTo(
+//     ".logo-name",
+//     {
+//       y: 50,
+//       opacity: 0,
+//     },
+//     {
+//       y: 0,
+//       opacity: 1,
+//       duration: 2,
+//       delay: 0.5,
+//     }
+//   );
+// LOADER 
+
+
 
 // SECTION 1
 
@@ -9,17 +37,17 @@ menu.onclick = () => {
     navlist.classList.toggle('open');
 };
 
-const sr = ScrollReveal ({
+const sr = ScrollReveal({
     distance: '65px',
     duration: 2600,
     delay: 450,
     reset: true
 });
 
-sr.reveal('.hero-text',{delay:200, origin: 'top'});
-sr.reveal('.hero-image',{delay:450, origin: 'bottom'});
-sr.reveal('.icons',{delay:500, origin: 'left'});
-sr.reveal('.scroll-down',{delay:500, origin: 'top'});
+sr.reveal('.hero-text', { delay: 200, origin: 'top' });
+sr.reveal('.hero-image', { delay: 450, origin: 'bottom' });
+sr.reveal('.icons', { delay: 500, origin: 'left' });
+sr.reveal('.scroll-down', { delay: 500, origin: 'top' });
 
 
 
