@@ -5,8 +5,8 @@ gsap.fromTo(
     {
       opacity: 0,
       display: "none",
-      duration: 1.5,
-      delay: 3.5,
+      duration: 0.7,
+      delay: 2,
     }
   );
   
@@ -19,8 +19,8 @@ gsap.fromTo(
     {
       y: 0,
       opacity: 1,
-      duration: 2,
-      delay: 0.5,
+      duration: 1,
+      delay: 0.3,
     }
   );
 // LOADER 
@@ -44,10 +44,10 @@ const sr = ScrollReveal({
     reset: true
 });
 
-sr.reveal('.hero-text', { delay: 200, origin: 'top' });
-sr.reveal('.hero-image', { delay: 450, origin: 'bottom' });
-sr.reveal('.icons', { delay: 500, origin: 'left' });
-sr.reveal('.scroll-down', { delay: 500, origin: 'top' });
+sr.reveal('.hero-text', { delay: 800, origin: 'top' });
+sr.reveal('.hero-image', { delay: 1000, origin: 'bottom' });
+sr.reveal('.icons', { delay: 1500, origin: 'left' });
+sr.reveal('.scroll-down', { delay: 1500, origin: 'top' });
 
 
 
