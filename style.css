@@ -284,14 +284,17 @@ section {
 
 
 /* SECTION VIDEO POPUP  */
+.sec02 {
+    padding: 0 10%;
+}
 
 .banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:start;
+    align-items:center;
 }
 
 .banner .content {
@@ -301,6 +304,7 @@ section {
 .banner .content img {
     max-width: 100%;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .banner .content h2 {
@@ -320,12 +324,16 @@ section {
 .banner .content a {
     position: relative;
     text-transform: uppercase;
-    background: var(--text-color-btn-prim);
-    color: var(--text-color-prim);
+    background: var(--text-color-prim);
+    color: var(--text-color-btn-prim);
+    /* background: var(--text-color-btn-prim);
+    color: var(--text-color-prim); */
     font-weight: 500;
     letter-spacing: 2px;
     display: inline-block;
     padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px -8px var(--text-color-prim);
 }
 
 .trailer {
