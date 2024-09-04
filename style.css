@@ -51,10 +51,11 @@ body {
 }
 
 @keyframes draw {
-    0%{
+    0% {
         stroke-dashoffset: 4500;
     }
-    100%{
+
+    100% {
         stroke-dashoffset: 0;
     }
 }
@@ -103,6 +104,7 @@ body {
     cursor: pointer;
 
 }
+
 /* ICONES DARK MODE  */
 
 /* DARK MODE  */
@@ -167,7 +169,7 @@ section {
 .navlist a:hover {
     color: var(--color-hover);
     /* color: var(--text-color-prim); */
-    
+
 }
 
 #menu-icon {
@@ -300,12 +302,14 @@ section {
     font-weight: 500;
     font-size: 2em;
 }
+
 .banner .content p {
     font-size: 1.2em;
     color: var(--text-color-prim);
     font-weight: 300;
     margin: 15px 0 15px;
 }
+
 .banner .content a {
     position: relative;
     text-transform: uppercase;
@@ -321,10 +325,13 @@ section {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 10004;
-    background: rgba(0, 0, 0, 0.80);
-    /* filter: blur(0.5); */
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+
     width: 100%;
     height: 100%;
     display: flex;
