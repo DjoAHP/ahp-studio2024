@@ -214,6 +214,7 @@ section {
     width: 550px;
     height: auto;
     opacity: 0.9;
+    animation: float-eth 4s ease-in-out infinite;
 }
 
 .hero-text a {
@@ -274,6 +275,20 @@ section {
 .icons i:hover {
     color: #4a626e;
     transform: translateY(-5px);
+}
+
+/* animation FLOTTANTE LOGO FOND  */
+
+@keyframes float-eth {
+    0%{
+        transform: translateY(.5rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
 }
 
 

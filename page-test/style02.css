@@ -22,99 +22,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100%;
-    width: 100%; */
   min-height: 100vh;
   background: linear-gradient(245.59deg, #181414 0%, #1c1414 28.53%, #212f36 75.52%);
-
 }
+
+
+/* height: 100%;
+    width: 100%; */
+
+
 
 
 a {
   cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), auto;
 }
-
-
-h1 {
-  font-size: 3.4vh;
-  margin: 0;
-
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.card {
-  position: relative;
-  height: 50vh;
-  width: 20%;
-  padding: 40px;
-  margin:20px;
-  transform-style: preserve-3d;
-}
-
-.card .title {
-  position: relative;
-  font-size: 2rem;
-  z-index: 2;
-  text-shadow: 3px 4px 10px rgba(24, 20, 20, 0.69);
-  color: #d9d3c4;
-  transform: translateZ(20px);
-  
-}
-
-.card .credits {
-  font-size: 1.5vh;
-  letter-spacing: 0.05em;
-  /* opacity: 1; */
-  text-shadow: 3px 4px 10px rgba(24, 20, 20, 0.69);
-  color: #d9d3c4;
-  transform: translateZ(20px);
-}
-
-.card .bg1 {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: url('/image/photos/utili-details/lame.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.card .bg2 {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: url('/image/photos/utili-details/droit.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.card .bg3 {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: url('/image/photos/utili-details/perle.png');
-  background-size: cover;
-  background-position: center;
-}
-
-
-
 
 
 
@@ -126,4 +47,3 @@ h1 {
 
 
 /* _________________RESPONSIVE___________________ */
-
