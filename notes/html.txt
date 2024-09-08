@@ -1,0 +1,41 @@
+<!-- BOX CARD  -->
+
+
+
+
+  <div class="container">
+    <div class="card" style="--clr: #a69d86;">
+      <div class="imgBx">
+        <img src="/image/photos/utili-details/lame.png">
+      </div>
+      <div class="content">
+        <h2>LA LAME</h2>
+        <p>Une lame realisée en 1095 avec une trempe sélective (Hamon) et une révélation au vinaigre blanc & jus de citron.</p>
+        <a href="#">Voir plus</a>
+      </div>
+    </div>
+    <div class="card" style="--clr: #a69d86;">
+      <div class="imgBx">
+        <img src="/image/photos/utili-details/droit.png">
+      </div>
+      <div class="content">
+        <h2>LE MANCHE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa sed autem totam dolorem. Earum quibusdam eaque eveniet explicabo voluptatum?</p>
+        <a href="#">Voir plus</a>
+      </div>
+    </div>
+    <div class="card" style="--clr: #a69d86;">
+      <div class="imgBx">
+        <img src="/image/photos/utili-details/perle.png">
+      </div>
+      <div class="content">
+        <h2>RIVETS / ACCESSOIRES</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa sed autem totam dolorem. Earum quibusdam eaque eveniet explicabo voluptatum?</p>
+        <a href="#">Voir plus</a>
+      </div>
+    </div>
+  </div>
+
+
+  
+    <!-- BOX CARD  -->
