@@ -16,9 +16,10 @@
 }
 
 body {
-    cursor: url("cursors/FormaShadowlessNormalSelect.cur"), auto;
     /* background: linear-gradient(245.59deg, rgb(24, 20, 20) 0%, rgb(28, 20, 20) 28.53%, rgb(33, 47, 54) 75.52%); */
     background: var(--background-color-prim);
+    cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), pointer;
+    cursor: url("/cursors/FormaShadowlessNormalSelect.cur"), auto;
 
     /* height: 100vh; */
 }
@@ -112,9 +113,23 @@ body {
 
 
 
-a {
-    cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), auto;
-}
+
+
+/* CURSOR  */
+
+/* .cursor {
+position: fixed;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: var(--text-color-prim);
+transition: 0.1s;
+transform: translate(-50%,-50%);
+pointer-events: none;
+} */
+/* CURSOR FIN */
+
+
 
 /* NAVBAR  */
 
@@ -287,7 +302,21 @@ section {
 
 
 
+/* ANIMATION LOGO FLOTTE  */
 
+@keyframes float-eth {
+    0%{
+        transform: translateY(.5rem);
+    }
+    50%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+
+/* ANIMATION LOGO FLOTTE  FIN */
 
 
 

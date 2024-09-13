@@ -39,7 +39,7 @@
 
 <body>
     <!-- CURSOR ROND  -->
-    <div class="cursor"></div>
+    <!-- <div class="cursor"></div> -->
     <!-- CURSOR ROND FIN -->
 
 
@@ -166,6 +166,17 @@
 
     <!---------SCRIPT-------->
 
+    <!-- Custom cursor  -->
+     <!-- <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        })
+     </script> -->
+     <!-- Custom cursor FIN  -->
+
+
     <!--Scrollreveal effect-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -183,22 +194,23 @@
         }
     </script>
 
+    <!-- LOADER  -->
+    <!--Script CDNJS/GSAP-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- LOADER FIN -->
+
+
+    <!--Custome js link-->
+    <script src="script.js"></script>
+
+    <!---------SCRIPT---FIN----->
+
 
 </body>
 
-<!-- LOADER  -->
-<!--Script CDNJS/GSAP-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- LOADER  -->
-
-
-<!--Custome js link-->
-<script src="script.js"></script>
-
-<!---------SCRIPT-------->
 
 </html>
