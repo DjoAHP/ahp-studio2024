@@ -1,3 +1,5 @@
+
+
 // LOADER 
 gsap.fromTo(
     ".loader-page",
@@ -23,12 +25,11 @@ gsap.fromTo(
       delay: 0.3,
     }
   );
-// LOADER 
+// LOADER FIN 
 
 
 
 // SECTION 1
-
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -48,33 +49,12 @@ sr.reveal('.hero-text', { delay: 800, origin: 'top' });
 sr.reveal('.hero-image', { delay: 1000, origin: 'bottom' });
 sr.reveal('.icons', { delay: 1500, origin: 'left' });
 sr.reveal('.scroll-down', { delay: 1500, origin: 'top' });
+// SECTION 1 FIN
 
 
 
-// const links = document.querySelectorAll('.navlist li a');
-// links.forEach((link, index) => {
-//     sr.reveal(link, { delay:300 * index, origin: 'top' });
-// });
-
-
-
-
-
-// window.addEventListener('scroll', function() {
-//     var footer = document.getElementById('footer');
-//     var scrollHeight = document.documentElement.scrollHeight;
-//     var clientHeight = document.documentElement.clientHeight;
-//     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-//     if (scrollHeight - clientHeight <= scrollTop) {
-//         footer.style.display = 'block';
-//     } else {
-//         footer.style.display = 'none';
-//     }
-// });
 
 // SCROLL FLECHE
-
 // Sélection de l'élément de la flèche de défilement
 const arrowDown = document.querySelector('.scroll-down');
 
@@ -86,9 +66,8 @@ arrowDown.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+// SCROLL FLECHE FIN
 
-
-// SECTION 2 
 
 
 
