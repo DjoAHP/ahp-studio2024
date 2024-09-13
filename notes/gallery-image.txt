@@ -1,0 +1,137 @@
+
+
+
+HTML
+-------
+
+<!-- GALLERY IMAGE ANIMATION HOVER  -->
+  <section class="gallery-detail">
+    <div class="container-image">
+      <div class="indicator"></div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/image/photos/utili-details/droit.png" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="/image/photos/utili-details/lame.png" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="/image/photos/utili-details/perle.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY IMAGE ANIMATION HOVER FIN -->
+
+
+  CSS 
+  -------
+
+  /* GALLERY IMAGE ANIMATION HOVER  */
+
+.gallery-detail {
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+}
+
+.container-image{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  width: 900px;
+  margin: 0 auto 2em auto;
+  padding: 1em 0.5em;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: #a69d86;
+  border-radius: 100%;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 20px;
+  height: 400px;
+  margin: 0 7px;
+  background: #000;
+  overflow: hidden;
+  transition: flex 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.gallery-item img {
+  width: 460px;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(2);
+}
+
+/* GALLERY IMAGE ANIMATION HOVER FIN */
+
+SCRIPT 
+-------
+
+// GALLERY IMAGE ANIMATION HOVER 
+
+const galleryContainer = document.querySelector(".gallery");
+const galleryItems = galleryContainer.querySelectorAll(".gallery-item");
+const indicator = document.querySelector(".indicator");
+
+const defaultItemFlex = "0 1 20px";
+const hoverItemFlex = "1 1 400px";
+
+const updateGalleryItems = () => {
+    galleryItems.forEach((item) => {
+        let flex = defaultItemFlex;
+
+        if (item.isHovered) {
+            flex = hoverItemFlex;
+        }
+
+        item.style.flex = flex;
+    });
+};
+
+galleryItems[0].isHovered = true;
+updateGalleryItems();
+
+galleryItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+        galleryItems.forEach((otherItem) => {
+            otherItem.isHovered = otherItem === item;
+        });
+
+        updateGalleryItems();
+    });
+});
+
+
+galleryContainer.addEventListener("mousemove", (e) => {
+    indicator.style.left = `${e.clientX - galleryContainer.getBoundingClientRect().left
+        }px`;
+});
+
+// GALLERY IMAGE ANIMATION HOVER FIN
+
