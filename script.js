@@ -88,6 +88,9 @@ arrowDown.addEventListener('click', () => {
 });
 
 
+// SECTION 2 
+
+
 
 
 
