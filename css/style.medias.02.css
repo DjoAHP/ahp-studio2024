@@ -1,20 +1,2 @@
 
 
-.scroll-down {
-    position: absolute;
-    bottom: 6%;
-    right: 9%;
-}
-
-.scroll-down i {
-    display: block;
-    padding: 13px;
-    font-size: 30px;
-    color: var(--text-color-prim);
-    border-radius: 30px;
-    transition: 0.5s;
-}
-
-.scroll-down i:hover {
-    transform: translateY(-5px);
-}
