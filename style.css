@@ -20,8 +20,8 @@ body {
     background: var(--background-color-prim);
     cursor: url("/cursors/FormaShadowlessLinkSelect.cur"), pointer;
     cursor: url("/cursors/FormaShadowlessNormalSelect.cur"), auto;
+    min-height: 200vh;
 
-    /* height: 100vh; */
 }
 
 
@@ -332,7 +332,7 @@ section {
 
 /* SCROLL BARRE PERSO  */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
